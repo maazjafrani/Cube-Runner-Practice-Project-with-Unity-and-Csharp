@@ -71,7 +71,7 @@ public class PlayerScript : MonoBehaviour
     private void FixedUpdate()
     {
         //using addForce method to apply force to our "Player Object":
-        //rigidbody.AddForce(0, 0, force * Time.deltaTime);//object will move in z axis so Time.deltaTime is given to make the object move independent from the frame rate
+        rigidbody.AddForce(0, 0, force * Time.deltaTime);//object will move in z axis so Time.deltaTime is given to make the object move independent from the frame rate
     }
 
 }
