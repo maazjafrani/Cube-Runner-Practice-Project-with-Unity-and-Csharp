@@ -5,12 +5,14 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     public PlayerScript playerScript;  //created a object or variable for Player Script file.
+    public Score score;  //variable or object for Score.cs
 
     //creating an inbuilt method "OnTriger" which executes when two objects collide or trigger:
     private void OnTriggerEnter(Collider other) //other is used for game objects
     {
         if (other.gameObject.tag == "Collectables") //if the object with which the player object collides has a tag "Collectables" so that object will be destroyed.
         {
+            score.AddScore(1);//incrementing score by 1
             Destroy(other.gameObject);  //game object being destroyed if condition true!
         }
 
