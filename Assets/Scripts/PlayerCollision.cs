@@ -6,6 +6,7 @@ public class PlayerCollision : MonoBehaviour
 {
     public PlayerScript playerScript;  //created a object or variable for Player Script file.
     public Score score;  //variable or object for Score.cs
+    public GameController gameController;  //game controller script being called or get!
 
     //creating an inbuilt method "OnTriger" which executes when two objects collide or trigger:
     private void OnTriggerEnter(Collider other) //other is used for game objects
@@ -24,6 +25,7 @@ public class PlayerCollision : MonoBehaviour
         if (other.gameObject.tag == "Obstacles") //if its a green, blue, obstacle, big obstacle object or if their tags are called "Obstacles" the the playerscript file will be disabled!
         {
             playerScript.enabled = false;  //player Script file being disabled!
+            gameController.GameOver(); //method GameOver being called! to enable game over screen!
         }
     }
 
