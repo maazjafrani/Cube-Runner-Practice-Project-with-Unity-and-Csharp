@@ -4638,6 +4638,7 @@ GameObject:
   - component: {fileID: 131251058}
   - component: {fileID: 131251060}
   - component: {fileID: 131251059}
+  - component: {fileID: 131251061}
   m_Layer: 5
   m_Name: TapToStart
   m_TagString: Untagged
@@ -4706,6 +4707,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131251057}
   m_CullTransparentMesh: 1
+--- !u!95 &131251061
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131251057}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 225f5b6bf103db04badb47dc39c90433, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &134046854
 GameObject:
   m_ObjectHideFlags: 0
@@ -30791,6 +30811,7 @@ GameObject:
   - component: {fileID: 805708423}
   - component: {fileID: 805708425}
   - component: {fileID: 805708424}
+  - component: {fileID: 805708426}
   m_Layer: 5
   m_Name: GameOverPanel
   m_TagString: Untagged
@@ -30818,7 +30839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: 84.9602}
+  m_AnchoredPosition: {x: 6, y: 0}
   m_SizeDelta: {x: 277.3078, y: 207.8812}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &805708424
@@ -30859,6 +30880,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805708422}
   m_CullTransparentMesh: 1
+--- !u!95 &805708426
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805708422}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0a27a40882d16aa43b7f84faa34a15bf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &806418082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59463,7 +59503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1578385708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -76844,7 +76884,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0010964, y: 66}
+  m_AnchoredPosition: {x: 0.0010964, y: 68}
   m_SizeDelta: {x: 277.31, y: 59.3074}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2072251621
